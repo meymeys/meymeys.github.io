@@ -6,6 +6,9 @@
 <link rel="stylesheet" href="styles/layout.css" type="text/css">
 </head>
 <body>
+  <button onclick="getVolume()" type="button">What is the volume?</button>
+<button onclick="setHalfVolume()" type="button">Set volume to 0.2</button>
+<button onclick="setFullVolume()" type="button">Set volume to 1.0</button><br> 
   <video width="400" controls>
   <source src="4chan_webms\AHHH VIDEOGAME.webm" type="video/webm">
   Your browser does not support the video tag.
@@ -361,6 +364,21 @@
   
   
   <h3> Suck on my noodle you fucking faggots </h3>
+<script>
+var vid = document.getElementById("myVideo");
 
+function getVolume() { 
+    alert(vid.volume);
+} 
+  
+function setHalfVolume() { 
+    vid.volume = 0.2;
+} 
+  
+function setFullVolume() { 
+    vid.volume = 1.0;
+} 
+</script>
+  
 </body>
 </html>
